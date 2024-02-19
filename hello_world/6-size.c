@@ -5,6 +5,7 @@
  *Return:0
  *
  */
+
 int main(void)
 {
 char charType;
@@ -20,3 +21,4 @@ printf("Size of a long long: %zu byte(s)\n", sizeof(long long));
 printf("Size of a float: %zu byte(s)\n", sizeof(float));
 return (0);
 }
+
