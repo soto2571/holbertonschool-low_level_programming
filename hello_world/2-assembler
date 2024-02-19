@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="2-assembler";  gcc -o $CFILE 
+CFILE="2-assembler" | gcc -S $CFILE 
