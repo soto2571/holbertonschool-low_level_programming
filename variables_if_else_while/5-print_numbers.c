@@ -6,7 +6,13 @@
  */
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art, \n");
+int zeroDigit = 0;
+
+for (zeroDigit = 0; zeroDigit <= 10; zeroDigit++)
+
+{
+	printf("%d\n", zeroDigit);
+}
 
 return (0);
 }
