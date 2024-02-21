@@ -8,11 +8,12 @@ int main(void)
 {
 int zeroDigit = 0;
 
-for (zeroDigit = 0; zeroDigit <= 10; zeroDigit++)
+for (zeroDigit = 0; zeroDigit <= 9; zeroDigit++)
 
 {
-	printf("%d\n", zeroDigit);
+	printf("%d", zeroDigit);
 }
+printf("\n");
 
 return (0);
 }
