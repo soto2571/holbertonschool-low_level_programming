@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- *alphabet - Start of the program
+ *print_alphabet - Start of the program
  *
  *Return:0
- *
  */
-int alphabet(void)
+void print_alphabet(void)
 {
 char abc = 'a';
 
@@ -13,6 +12,5 @@ for (abc = 'a'; abc <= 'z'; abc++)
 	_putchar(abc);
 	_putchar('\n');
 
-print_alphabet();
 return (0);
 }
