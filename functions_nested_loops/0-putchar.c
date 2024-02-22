@@ -1,12 +1,22 @@
-#include <stdio.h>
+#include "holberton.h"
+
 /**
- *main - Start of the program
- *
- *Return:0
- */
+  * main - Entry point
+  *
+  * Return: Always 0
+  */
 int main(void)
 {
-printf("_putchar");
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 
-return (0);
+	return (0);
 }
