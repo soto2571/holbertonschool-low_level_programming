@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *main - Start of the program
+ *alphabet - Start of the program
  *
  *Return:0
  *
