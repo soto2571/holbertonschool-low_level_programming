@@ -32,7 +32,7 @@ for ( ; n <=98; n--)
 {
 	printf("%d", n);
 	printf(",");
-	print(" ");
+	printf(" ");
 }
 }
 }
