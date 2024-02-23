@@ -23,6 +23,7 @@ for ( ; n <= 98; n--)
 	_putchar(',');
 	_putchar(' ');
 }
+if (n == 98)
 	_putchar(n);
 }
 }
