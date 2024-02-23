@@ -15,9 +15,7 @@ for ( ; n <= 98; n++)
 	_putchar(',');
 	_putchar(' ');
 }
-{
 	_putchar(n);
-}
 }
 if (n < 0)
 {
