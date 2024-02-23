@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *times_table - start of the program
+ *times_tables - start of the program
  *
  *Return:0
  */
-void times_table(void)
+void times_tables(void)
 {
 int num, mult, prod;
 
