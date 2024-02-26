@@ -10,7 +10,7 @@ int i;
 
 char slash = '\n';
 
-char line = '92';
+char line = 92;
 
 for (i = 1; i <= n; i++)
 {
