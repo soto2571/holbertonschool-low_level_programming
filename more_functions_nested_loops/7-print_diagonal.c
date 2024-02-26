@@ -15,11 +15,11 @@ char line = 92;
 for (i = 1; i <= n; i++)
 {
 	_putchar(line);
+	_putchar('\n');
 
 	if (n <= 0)
 	{
 	_putchar(slash);
 	}
 }
-_putchar('\n');
 }
