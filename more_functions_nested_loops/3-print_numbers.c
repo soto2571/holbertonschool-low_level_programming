@@ -16,3 +16,4 @@ if (num >= 48 && num <= 57)
 	_putchar('\n');
 
 }
+}
