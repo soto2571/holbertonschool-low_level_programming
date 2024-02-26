@@ -7,13 +7,19 @@
 void print_line(int n)
 {
 int i;
-for (i = 1; i <= n; n++)
+
+char under = 95;
+
+char slash = '\n';
+
+for (i = 1; i <= n; i++)
 {
-	_putchar('_');
-}
+	_putchar(under);
+
 	if (n <= 0)
 	{
-	_putchar('\n');
+	_putchar(slash);
 	}
 }
-
+_putchar('\n');
+}
