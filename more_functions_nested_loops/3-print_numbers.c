@@ -8,11 +8,11 @@
  */
 void print_numbers(void)
 {
-int num;
+int x;
 
-if (num >= 48 && num <= 57)
+if (x >= 48 && x <= 57)
 {
-	_putchar(num);
+	_putchar(x);
 	_putchar('\n');
 
 }
