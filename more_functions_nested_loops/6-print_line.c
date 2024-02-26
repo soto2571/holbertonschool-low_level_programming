@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  *print_line - Start of the program
- *
+ *@n: The line
  *
  */
-void print_line(void)
+void print_line(int n)
 {
 char n;
 
@@ -14,4 +14,6 @@ if (n <= 0)
 }
 else
 	_putchar('_');
+
+return (0);
 }
