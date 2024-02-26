@@ -20,6 +20,7 @@ for (i = 1; i <= n; i++)
 	if (n <= 0)
 	{
 	_putchar(slash);
+	_putchar('\n');
 	}
 }
 }
