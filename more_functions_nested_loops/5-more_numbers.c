@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  *more_numbers - Start of the program
  *
@@ -13,8 +13,8 @@ for (x = 0; x <= 10; x++)
 {
 for (y = 0; y <= 14; y++)
 {
-_putchar(y + '0');
+	_putchar(y + '0');
 }
-_putchar('\n');
+	_putchar('\n');
 }
 }
