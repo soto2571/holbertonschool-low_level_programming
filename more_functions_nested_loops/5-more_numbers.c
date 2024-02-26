@@ -18,6 +18,7 @@ do
 		{
 			_putchar((j / 10) + '0');
 		}
+		_putchar((j % 10) + '0');
 	}
 	i++;
 	_putchar('\n');
