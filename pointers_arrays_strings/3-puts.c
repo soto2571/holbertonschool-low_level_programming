@@ -15,6 +15,6 @@ if (str != NULL)
 		putchar(*str);
 		str++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
 }
