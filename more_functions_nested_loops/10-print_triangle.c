@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ *print_triangle - Start of the program
+ *@size:Prints a triangle
  *
  *
  */
@@ -13,16 +13,17 @@ int y;
 
 if (size > 0)
 {
-	for (x = 1; x <= size; x++)
+	for (x = size; x >= 1; x--)
 	{
-		for (y = 0; y < x; y++)
+		for (y = 1; y <= size - x; y++)
 		{
-			if (y != 0)
+			_putchar(' ');
+		}
+			for (y = 1; y <= x; y++)
 			{
-				_putchar(' ');
+				_putchar('#');
 			}
 		}
-		_putchar('#');
 		_putchar('\n');
 	}
 }
