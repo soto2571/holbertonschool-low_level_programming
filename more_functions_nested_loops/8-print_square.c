@@ -21,6 +21,7 @@ if (size > 0)
 		}
 	y = 0;
 	x++;
+	if (x < size)
 	_putchar('\n');
 	}
 }
