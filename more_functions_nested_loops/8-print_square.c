@@ -7,8 +7,8 @@
 void print_square(int size)
 {
 char hash = '#';
-int x;
-int y;
+int x = 0;
+int y = 0;
 
 if (size > 0)
 {
