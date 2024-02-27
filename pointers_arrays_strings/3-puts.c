@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *_puts - Start of the program
  *@str: Variable that prints
