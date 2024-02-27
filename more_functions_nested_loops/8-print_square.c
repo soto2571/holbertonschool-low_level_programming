@@ -12,15 +12,15 @@ int y;
 
 if (size > 0)
 {
-	while (a < size)
+	while (x < size)
 	{
-		while (b < size)
+		while (y < size)
 		{
 		_putchar(hash);
-		b++;
+		y++;
 		}
-	b = 0;
-	a++;
+	y = 0;
+	x++;
 	_putchar('\n');
 	}
 }
