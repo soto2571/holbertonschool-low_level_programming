@@ -24,6 +24,7 @@ if (size > 0)
 	if (x < size)
 	_putchar('\n');
 	}
+	_putchar('\n');
 }
 else
 {
