@@ -11,9 +11,9 @@ int x;
 
 int y;
 
-if (n > 0)
+if (size > 0)
 {
-	for (x = 1; x <= n; x++)
+	for (x = 1; x <= size; x++)
 	{
 		for (y = 0; y < x; y++)
 		{
