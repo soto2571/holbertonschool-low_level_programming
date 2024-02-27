@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_square - Start of the program
- *
+ *@size:Print a square
  *Return:0
  */
 void print_square(int size)
@@ -12,12 +12,16 @@ int y;
 
 if (size > 0)
 {
-	for (x = 1; x <= size; x++)
+	while (a < size)
 	{
-		for (y = 0; y < x; y++)
+		while (b < size)
 		{
 		_putchar(hash);
+		b++;
 		}
+	b = 0;
+	a++;
+	_putchar('\n');
 	}
 }
 else
