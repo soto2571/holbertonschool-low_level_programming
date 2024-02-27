@@ -12,7 +12,7 @@ if (str != NULL)
 {
 	while (*str != '\0')
 	{
-		_putchar(*str);
+		putchar(*str);
 		str++;
 	}
 	_putchar('\n');
