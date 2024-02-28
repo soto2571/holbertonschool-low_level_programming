@@ -12,9 +12,9 @@ int half;
 int start_index;
 
 while (str[i] != '\0')
-{
+
 	i++;
-}
+
 
 len = i;
 
@@ -22,12 +22,10 @@ half = (len - 1) / 2;
 
 
 for (start_index = half + 1; start_index <= len - 1; start_index++)
-{
-	if (start_index % 2 == 0)
-	{
+	
 		_putchar(str[start_index]);
-	}
-}
+	
+
 _putchar('\n');
 }
 
