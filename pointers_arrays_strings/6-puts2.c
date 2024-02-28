@@ -13,8 +13,10 @@ while (str[len] != '\0')
 {
 	len++;
 }
-for (i = len - 1; i < '\0'; i += 2)
+while (i < len)
 {
-	_putchar(str[len]);
+	_putchar(str[i]);
+	i += 2;
 }
+	_putchar('\n');
 }
