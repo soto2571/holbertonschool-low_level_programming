@@ -20,12 +20,10 @@ len = i;
 
 half = (len - 1) / 2;
 
-
 for (start_index = half + 1; start_index <= len - 1; start_index++)
-	
-		_putchar(str[start_index]);
-	
-
+{
+	_putchar(str[start_index]);
+}
 _putchar('\n');
 }
 
