@@ -21,13 +21,13 @@ len = i;
 half = (len - 1) / 2;
 
 
-for (start_index = half; start_index <= len - 1; start_index++)
+for (start_index = half + 1; start_index <= len - 1; start_index++)
 {
 	if (start_index % 2 == 0)
 	{
 		_putchar(str[start_index]);
 	}
-	_putchar('\n');
 }
+_putchar('\n');
 }
 
