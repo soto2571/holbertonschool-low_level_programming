@@ -18,7 +18,7 @@ while (str[i] != '\0')
 }
 if (len % 2 == 0)
 {
-	start_index = len / 2;
+	start_index = len -1 / 2;
 }
 else
 {
