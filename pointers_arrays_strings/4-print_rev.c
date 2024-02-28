@@ -17,9 +17,10 @@ if (s != NULL)
 		len++;
 	}
 
-	for (int i = len - 1; i >= 0; i--)
+	while (len > 0)
 	{
-		_putchar(s[i]);
+		len--;
+		_putchar(s[len]);
 	}
 
 	_putchar('\n');
