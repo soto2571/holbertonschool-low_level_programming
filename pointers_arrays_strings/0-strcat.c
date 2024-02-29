@@ -14,9 +14,17 @@ char *_strcat(char *dest, char *src)
 char *string1 = dest;
 char *string2 = src;
 
-while ((string1++ = string2++) != '\0')
+while (string1 != '\0')
 {
+	string1++;
 }
+while (*string2 != '\0')
+{
+	*string1 = *string2;
+	string1++;
+	string2++;
+}
+*string1 = '\0';
 
-return (*string1);
+return (dest);
 }
