@@ -14,7 +14,7 @@ char *_strcat(char *dest, char *src)
 char *string1 = dest;
 char *string2 = src;
 
-while (string1 != '\0')
+while (*string1 != '\0')
 {
 	string1++;
 }
