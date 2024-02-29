@@ -18,5 +18,5 @@ while ((string1++ = string2++) != '\0')
 {
 }
 
-return (string1);
+return (*dest);
 }
