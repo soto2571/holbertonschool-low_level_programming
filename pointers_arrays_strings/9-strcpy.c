@@ -13,5 +13,5 @@ while ((*dest++ = *src++) != '\0')
 {
 }
 
-return (dest);
+return (originalDest);
 }
