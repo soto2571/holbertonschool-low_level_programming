@@ -17,7 +17,7 @@ while (*string1 != '\0')
 {
 	string1++;
 }
-while (*string2 >= '\0' && n  > 0) 
+while (*string2 >= '\0' && n  > 0)
 {
 	*string1 = *string2;
 	string1++;
