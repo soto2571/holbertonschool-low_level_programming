@@ -3,9 +3,10 @@
 /**
  *_strncat - Start of the program
  *
- *
- *
- *
+ *@dest:The destination string
+ *@src:The source string
+ *@n:The maximum number of bytes to use
+ *Return:dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -18,7 +19,7 @@ while (*string1 != '\0')
 }
 while (*string2 >= '\0' && > 0) 
 {
-	string1 = string2
+	string1 = string2;
 	string1++;
 	string2++;
 	n--;
