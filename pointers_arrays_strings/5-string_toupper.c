@@ -1,27 +1,21 @@
 #include "main.h"
 /**
- * rev_string - the name of the prototype
+ * string_toupper - name of function
  *
- * @s: the name of variable
  *
- * Return:
+ * @u: the variable name that i choose
+ * Return: the varibale u
 **/
-
-void rev_string(char *s)
+char *string_toupper(char *u)
 {
-	int i = 0, index;
+	int i;
 
-	while (s[i] != '\0')
+	for (i = 0; u[i] != '\0'; i++)
 	{
-		i++;
+		if (u[i] > 96 && u[i] < 123)
+		{
+			u[i] -= 32;
+		}
 	}
-	for (index = 0; index < i / 2; index++)
-	{
-		char temp = s[index];
-
-		s[index] = s[i - 1 - index];
-
-		s[i - 1 - index] = temp;
-	}
-
+	return (u);
 }
