@@ -3,7 +3,7 @@
  *_memcpy - Start of the program
  *@dest:Destination memory
  *@src:Source memory
- *n:Number of bytes to copy
+ *@n:Number of bytes to copy
  *Return:dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
