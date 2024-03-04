@@ -17,5 +17,5 @@ while (*s != '\0')
 }
 
 
-return (NULL);
+return ((char *)0);
 }
