@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <string.h>
 /**
  *_strspn - Start of the program
  *@s:Initial segment
