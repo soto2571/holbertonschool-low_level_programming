@@ -27,7 +27,7 @@ while (*s != '\0')
 	{
 		break;
 	}
-	s++
+	s++;
 }
 return (count);
 }
