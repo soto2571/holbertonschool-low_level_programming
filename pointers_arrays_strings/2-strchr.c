@@ -16,6 +16,5 @@ while (*s != '\0')
 	s++;
 }
 
-
 return ((char *)0);
 }
