@@ -12,8 +12,7 @@ char *ptr = s;
 
 while (n-- > 0)
 {
-		*ptr++ = b;
+*ptr++ = b;
 }
-
 return (s);
 }
