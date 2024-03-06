@@ -1,8 +1,8 @@
-#include
+#include "main.h"
 /**
- *
- *
- *
+ *_puts_recursion - Start of the program
+ *@s: String value
+ *Return:
  */
 void _puts_recursion(char *s)
 {
