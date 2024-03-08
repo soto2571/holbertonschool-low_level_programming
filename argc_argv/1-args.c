@@ -5,7 +5,7 @@
  *@argv:Count the strings
  *Return:0
  */
-int main(int argc, char argv[])
+int main(int argc, int argv[])
 {
 printf("%d\n", argc - 1);
 return (0);
