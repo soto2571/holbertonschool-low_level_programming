@@ -5,9 +5,15 @@
  *@argv:Count the strings
  *Return:0
  */
-int main(int argc, int argv[])
+int main(int argc, char *argv[])
 {
 printf("%d\n", argc - 1);
-return (0);
+
+for (int i = 1; i < argc; i++)
+{
+	printf("%d: %s\n", i, argv[i]);
+
+}
+	return (0);
 }
 
