@@ -7,12 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-printf("Number of arguments:%d\n", argc - 1);
-
 int i;
-for (i = 1; i < argc; i++)
+printf("%d\n", argc);
+for (i = 0; i < argc - 1; i++)
 {
-	printf("Argument %d: %s\n", i, argv[i]);
+	printf("%s", *argv[i]);
 }
-	return (0);
+return (0);
 }
