@@ -14,9 +14,8 @@ if (size == 0)
 	return (NULL);
 }
 
-unsigned int i;
-
 char *array = (char *)malloc(size * sizeof(char));
+unsigned int i;
 
 if (array == NULL)
 {
