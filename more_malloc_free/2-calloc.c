@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stirng.h>
 /**
  *_calloc - allocate memory for an array and initialize with zeros
  *@nmemb: number of elements in the array
