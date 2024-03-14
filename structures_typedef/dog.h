@@ -5,12 +5,14 @@
  *@name: Name
  *@age: Age
  *@owner: Owner
+ *@Breed: breed
  */
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
+	char Breed;
 };
 
 void print_dog(struct dog *d);
