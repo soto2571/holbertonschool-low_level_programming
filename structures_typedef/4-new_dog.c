@@ -44,34 +44,29 @@ char *_strcpy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *newd;
+	dog_t *newDog = (dog_t *)malloc(sizeof(dog_t));
 
-	newd = malloc(sizeof(struct dog));
-
-	if (newd == NULL)
-		return (NULL);
-
-	if (name == NULL)
+	if (newDog == NULL)
 	{
-		free(newd);
-		return (NULL);
+	return (NULL);
 	}
-	newd->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (newd->name == NULL)
-		return (NULL);
-	_strcpy(newd->name, name);
 
-	newd->age = age;
-		if (owner == NULL)
+	newDog->name = (char *)malloc(_strlen(name) + 1);
+	if (*newDog->name == NULL)
 	{
-		free(newd->owner);
-		free(newd);
-		return (NULL);
+	free(newDog);
+	return (NULL);
 	}
-	newd->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (newd->owner == NULL)
-		return (NULL);
-	_strcpy(newd->owner, owner);
+	_strcpy(newDog->name, name);
 
-	return (newd);
+	newDog->owner = (char *)malloc(_strlen(owner) + 1);
+	if (newDog->owner == NULL)
+	{
+	free(newDog->name);
+	free(newDog);
+	return (NULL);
+	}
+	_strcpy(newDog->owner, owner);
+	newDog->age = age;
+	return (newDog);
 }
