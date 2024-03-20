@@ -22,9 +22,12 @@ void _printstr(va_list list)
 
 	s = va_arg(list, char *);
 	if (s == NULL)
+	{
 		s = "(nil)";
 		printf("%s", s);
-}
+	}
+
+	}
 /**
  *_printfloat - print float
  *@list: va_list passed to function
