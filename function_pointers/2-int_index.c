@@ -7,6 +7,11 @@
  *@cmp: Function being call
  *Return:The index of the first element for wich the cmp
  */
+int compare(int x)
+{
+	return x != 5;
+}
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
