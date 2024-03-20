@@ -1,13 +1,10 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *sum_them_all - Start of the program
- *@n: Variable
- *
- *
+ *sum_them_all - return the sum of all its parameters
+ *@n: number of extra params
+ *Return: total sum
  */
-int sum_them_all(const unsigned int n, ...);
-
 int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0;
