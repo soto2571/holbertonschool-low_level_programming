@@ -21,8 +21,8 @@ void _printstr(va_list list)
 	char *s;
 
 	s = va_arg(list, char *);
-	if (s == NULL0
-		s = "nil";
+	if (s == NULL)
+		s = "(nil)";
 		printf("%s", s);
 }
 /**
@@ -54,7 +54,7 @@ checker storage[] = {
 
 i = 0;
 sep = "";
-va_strat(args, format);
+va_start(args, format);
 while (format != NULL && format[i / 4] != '\0')
 {
 	j = i % 4;
