@@ -1,75 +1,50 @@
-#include "variadic_functions.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include "variadic_functions.h"
+#include <stdarg.h>
 /**
- *_printchar - Start of the program
- *@list: va_list passed to function
- */
-
-void _printchar(va_list list)
-{
-	printf("%c", va_arg(list, int));
-}
-
-/**
- *_printstr - print stirng
- *@list: va_list passed to function
- */
-void _printstr(va_list list)
-{
-	char *s;
-
-	s = va_arg(list, char *);
-	if (s == NULL)
-	{
-		s = "(nil)";
-		printf("%s", s);
-	}
-
-	}
-/**
- *_printfloat - print float
- *@list: va_list passed to function
- */
-void _printfloat(va_list list)
-{
-printf("%d", va_arg(list, int));
-}
-
-/**
- *print_all - print anything
- *@format: string
- */
-
+ * print_all - prints all
+ * @format: the format
+**/
 void print_all(const char * const format, ...)
 {
-unsigned int i, j;
-va_list args;
-char *sep;
+	va_list args;
 
-checker storage[] = {
-	{ "c", _printchar },
-	{ "f", _printchar },
-	{ "s", _printchar },
-	{ "i", _printchar },
-};
+	int i = 0;
 
-i = 0;
-sep = "";
-va_start(args, format);
-while (format != NULL && format[i / 4] != '\0')
-{
-	j = i % 4;
-	if (storage[j].type[0] == format[i / 4])
+	char *s, *separator = "";
+
+	va_start(args, format);
+
+	while (format && format[i])
 	{
-		printf("%s", sep);
-		storage[j].f(args);
-		sep = ", ";
-	}
-	i++;
-}
-printf("\n");
-va_end(args);
-}
+		switch (format[i])
+		{
+			case 'c':
+				printf("%s%c", separator, va_arg(args, int));
+				break;
+			case 'i':
 
+				printf("%s%d", separator, va_arg(args, int));
+				break;
+			case 'f':
+				printf("%s%f", separator, (float)va_arg(args, double));
+				break;
+			case 's':
+				s = va_arg(args, char *);
+				if (s == NULL)
+				{
+					s = "(nil)";
+				}
+				printf("%s%s", separator, s);
+				break;
+
+			default:
+				i++;
+				continue;
+		}
+		separator = ", ";
+		i++;
+	}
+	va_end(args);
+	printf("\n");
+}
