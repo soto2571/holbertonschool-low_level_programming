@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include "lists.h"
 /**
  *print_list - Print all the list content
  *@h: Pointer to the head of the list
