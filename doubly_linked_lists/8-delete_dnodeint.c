@@ -8,7 +8,7 @@
  *Return: 1
  */
 
-ind delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	if (*head == NULL)
 		return (-1);
@@ -28,7 +28,7 @@ ind delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	while (current != NULL && count < index)
 	{
-		current - current->next;
+		current = current->next;
 		count++;
 	}
 
