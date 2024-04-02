@@ -20,7 +20,10 @@ char *my_strdup(const char *src)
 	new_str = malloc(len + 1);
 
 	if (new_str == NULL)
-		new_str[i] = src[i];
+		return (NULL);
+
+	for (i = 0; i <= len; i++)
+		new_str[i] = src [i];
 
 	return (new_str);
 }
@@ -67,3 +70,4 @@ list_t *add_node_end(list_t **head, const char *str)
 		current->next = new_node;
 	}
 	return (new_node);
+}
