@@ -23,7 +23,7 @@ char *my_strdup(const char *src)
 		return (NULL);
 
 	for (i = 0; i <= len; i++)
-		new_str[i] = src [i];
+		new_str[i] = src[i];
 
 	return (new_str);
 }
