@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "list.h"
+#include "lists.h"
 /**
  *free_list - freeing the list
  *@head: the head
